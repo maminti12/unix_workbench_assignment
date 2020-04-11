@@ -5,7 +5,7 @@ let n=$resp
 }
 request
 
-rn=$(ls -A | wc -l)                     # real number of files including dot files
+rn=$(ls -l | wc -l)                     # real number of files not including dot files
 
 while [[ n -ne rn ]] 
 do
